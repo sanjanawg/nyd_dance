@@ -1,0 +1,75 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #fff;
+    border-bottom: 2px solid #d4af37; /* Golden */
+}
+
+.navbar-brand {
+    color: #d4af37 !important; /* Golden */
+}
+
+.navbar-nav .nav-link {
+    color: #000 !important; /* Black */
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4af37 !important; /* Golden */
+}
+
+.navbar-nav .nav-link.active {
+    color: #d4af37 !important; /* Golden */
+}
+
+/* Circular Border around Logo */
+.logo-container {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #d4af37; /* Golden */
+    border-radius: 50%;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+/* Golden Border Line Below Navbar */
+.golden-border {
+    width: 100%;
+    height: 2px;
+    background-color: #d4af37; /* Golden */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Golden color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}

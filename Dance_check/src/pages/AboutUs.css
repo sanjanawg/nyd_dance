@@ -1,0 +1,109 @@
+.container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h1.nyd-title {
+  color: #FFD700; /* Golden color */
+}
+
+.studio-intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.instructors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .instructors-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.instructor-card {
+  border: 1px solid #ebcf60;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+  width: 90%; /* Increased width */
+  max-width: 600px; /* Increased max-width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.instructor-image {
+  border: 5px solid #FFD700; /* Golden border */
+  width: 150px; /* Increased width */
+  height: 150px; /* Increased height */
+}
+
+.animate__animated {
+  --animate-duration: 1s;
+}
+
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+
+.social-icons a:hover {
+  color: #FFD700; /* Golden color */
+}

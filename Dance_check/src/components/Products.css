@@ -1,0 +1,74 @@
+/* Products.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.container {
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  color: #333; /* Darker color for better contrast */
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: 1px solid goldenrod;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.buttons button {
+  margin: 5px;
+
+  background-color: white;
+  border: 1px solid goldenrod;
+  color: black;
+}
+
+.buttons button:hover {
+  transform: translateY(-3px);
+  background-color: goldenrod;
+  color: white;
+}
+
+.card {
+  
+  will-change: transform, box-shadow;
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(218, 165, 32, 0.3); /* Goldenrod shadow */
+}
+
+.card-title, .card-text {
+  color: #333; /* Darker color for better contrast */
+}
+
+.card-body .btn {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+}
+
+.card-body .btn:hover {
+  background-color: darkgoldenrod;
+}
+
+
+
+
